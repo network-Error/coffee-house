@@ -1,11 +1,68 @@
 @import './normalize.css';
 * {
   font-family: "Inter", sans-serif;
+  color: #403F3D;
+  font-weight: 600;
 }
 
-h1 {
-  font-size: 66px;
-  text-align: center;
+.container {
+  width: 1360px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #E1D4C9;
+  padding: 0 40px;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__logo {
+  background-image: url("../assets/header/logo.png");
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 60px;
+}
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+.nav__list .nav__list-items-links {
+  line-height: 105%;
+  position: relative;
+  top: -2px;
+  left: -3px;
+}
+.nav__menu {
+  position: relative;
+  top: -4px;
+  left: -5px;
+}
+.nav__menu .nav__menu-img {
+  position: relative;
+  top: 2px;
+  left: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

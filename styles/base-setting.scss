@@ -1,0 +1,26 @@
+@import './variables';
+
+* {
+  font-family: $font-family;
+  color: $color-dark;
+  font-weight: $fw-600;
+}
+
+.container {
+  width: 1360px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}

@@ -1,8 +1,49 @@
 @import './variables';
 @import './normalize.css';
-@import './base-reset.scss';
+@import './base-setting.scss';
 
-h1 {
-  font-size: 66px;
-  text-align: center;
+body {
+  background-color: $color-body;
+  padding: 0 40px;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    background-image: url('../assets/header/logo.png');
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 60px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+
+    .nav__list-items-links {
+      line-height: $lh-105;
+      position: relative;
+      top: -2px;
+      left: -3px;
+    }
+  }
+
+  &__menu {
+    position: relative;
+    top: -4px;
+    left: -5px;
+
+    .nav__menu-img {
+      position: relative;
+      top: 2px;
+      left: 5px;
+    }
+  }
 }

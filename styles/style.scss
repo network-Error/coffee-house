@@ -7,6 +7,10 @@ body {
   padding: 0 40px;
 }
 
+.header {
+  margin-bottom: 100px;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -98,5 +102,131 @@ body {
     align-items: center;
     position: relative;
     top: 1px;
+  }
+}
+
+// !!!>  favorite-coffee  <!!!
+.favorite-coffee {
+
+  .favorite-coffee__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .favorite-coffee__heading {
+      font-size: $fs-60;
+      line-height: $lh-125;
+      text-align: center;
+    }
+
+    .favorite-coffee__heading p span {
+      font-style: italic;
+      line-height: $lh-125;
+      color: $color-accent;
+      position: relative;
+      left: -4px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__slider-btn {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-body;
+    border: 1px solid $color-border-dark;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+
+    &_left {
+      left: 4px;
+    }
+
+    &_right {
+      right: 4px;
+    }
+  }
+
+  &__slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1152px;
+  }
+
+  &__slide1 {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+    .favorite-coffee__slide1-img {
+      background-image: url('../assets/favorite-coffee/coffee-slider-1.png');
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 480px;
+    }
+
+    .favorite-coffee__slide-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .favorite-coffee__slide1-heading{
+      font-size: $fs-24;
+      line-height: $lh-125;
+      position: relative;
+      top: 1px;
+    }
+
+    .favorite-coffee__slide1-text {
+      font-weight: $fw-400;
+      line-height: $lh-150;
+    }
+
+    .favorite-coffee__slide1-price {
+      font-size: $fs-24;
+      line-height: $lh-125;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  &__slide-dots {
+    width: 144px;
+    height: 4px;
+    margin-left: 45%;
+    position: relative;
+    span {
+      background-color: $color-border-light;
+      width: 40px;
+      height: 4px;
+      position: absolute;
+    }
+    span:nth-child(1) {
+      background-color: $color-border-dark;
+    }
+    span:nth-child(2) {
+      left: 52px;
+    }
+    span:nth-child(3) {
+      left: 104px;
+    }
   }
 }

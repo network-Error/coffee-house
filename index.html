@@ -32,7 +32,6 @@
 
       <div class="header__hero">
         <div class="header__hero-text">
-          <!-- <h1 class="header__hero-text header__hero-text_h1"><span>Enjoy</span> premium coffee at our charming cafe</h1> -->
           <h1 class="header__hero-text header__hero-text_h1"><p><span>Enjoy</span> premium coffee at our charming cafe</p></h1>
           <p class="header__hero-text header__hero-text_text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
           <button class="btn header__hero-text header__hero-text_btn">Menu</button>
@@ -40,6 +39,43 @@
       </div>
     </div>
   </header>
+
+  <main class="main">
+      <section class="favorite-coffee">
+        <div class="container">
+          <div class="favorite-coffee__wrapper">
+            <h2 class="favorite-coffee__heading"><p>Choose your <span>favorite</span> coffee</p></h2>
+            <div class="favorite-coffee__slider">
+              <button class="favorite-coffee__slider-btn favorite-coffee__slider-btn_left">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div class="favorite-coffee__slider-wrapper">
+                <div class="favorite-coffee__slide1">
+                  <div class="favorite-coffee__slide1-img"></div>
+                  <div class="favorite-coffee__slide-wrapper">
+                    <h3 class="favorite-coffee__slide1-heading">S’mores Frappuccino</h3>
+                    <p class="favorite-coffee__slide1-text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                    <p class="favorite-coffee__slide1-price">$5.50</p>
+                  </div>
+                </div>
+              </div>
+              <button class="favorite-coffee__slider-btn favorite-coffee__slider-btn_right">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                  
+              </button>
+              <div class="favorite-coffee__slide-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
   <script src="./main.js"></script>
 </body>
 </html>

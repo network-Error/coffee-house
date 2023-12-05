@@ -1,0 +1,45 @@
+@import './variables';
+
+* {
+  font-family: $font-family;
+  color: $color-dark;
+  font-weight: $fw-600;
+}
+
+.container {
+  width: 1360px;
+  margin: 0 auto;
+}
+
+ul,
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+.btn {
+  border: none;
+  width: 200px;
+  height: 64px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+button {
+  border: none;
+}

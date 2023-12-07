@@ -902,3 +902,141 @@ body {
   position: relative;
   top: -4px;
 }
+
+// >>> ADAPTIVE <<<
+
+@media (max-width: 1399.98px) {
+  .container {
+    width: 1200px;
+  }
+
+  .header {
+    overflow: hidden;
+  }
+
+  .header__hero {
+    width: 91%;
+  }
+
+  .favorite-coffee__slider-wrapper {
+    width: 80%;
+  }
+
+  .mobile-app__img {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 1279.98px) {
+  .container {
+    width: 100%;
+  }
+
+  .header__hero {
+    width: 88%;
+    height: 540px;
+  }
+
+  .favorite-coffee__slider-wrapper {
+    width: 70%;
+  }
+
+  .favorite-coffee__slide-dots {
+    margin-left: 44%;
+  }
+
+  .about__img {
+    background-position: bottom;
+  }
+
+  .footer__wrapper {
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 991.98px) {
+  .nav__list, 
+  .nav__menu {
+    display: none;
+  }
+
+  .header__hero {
+    width: 91%;
+    height: 644px;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+  }
+
+  .favorite-coffee__slide-dots {
+    margin-left: 39%;
+  }
+
+  .favorite-coffee__slider-btn_left,
+  .favorite-coffee__slider-btn_right {
+    left: 0;
+  }
+
+  .about__img-container:nth-child(2) {
+    display: none;
+  }
+
+  .about__img-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about__img_img1 {
+    background-position: center;
+  }
+
+  .about__img_img2 {
+    background: url('../assets/about/about-4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 590px;
+    background-position: center;
+  }
+
+  .mobile-app__wrapper {
+    flex-direction: column;
+    padding: 0
+  }
+
+  .mobile-app__offer-heading,
+  .mobile-app__offer-text {
+    top: 0;
+  }
+
+  .mobile-app__wrapper-links {
+    position: relative;
+    top: -1px;
+  }
+
+  .mobile-app__img {
+    position: relative;
+    background-size: contain;
+    top: -2px;
+    left: 29px;
+  }
+
+  .footer {
+    height: 736px;
+    position: relative;
+    top: -2px;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+    gap: 100px;
+    padding-left: 58px;
+  }
+
+  .footer__contacts-info {
+    position: relative;
+    top: 1px;
+    left: 2px;
+  }
+}

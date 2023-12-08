@@ -932,5 +932,142 @@ body {
     left: 2px;
   }
 }
+@media (max-width: 767.98px) {
+  body {
+    padding: 0 16px;
+  }
+
+  .header__hero {
+    width: 91%;
+    height: 432px;
+    padding: 60px 16px;
+    justify-content: flex-start;
+  }
+
+  .header__hero-text {
+    width: 100%;
+  }
+
+  .header__hero-text_h1 p {
+    font-size: 42px;
+    line-height: 115%;
+  }
+
+  .header__hero-text_h1 p span {
+    left: -3px;
+  }
+
+  .header__hero-text_text {
+    top: -1px;
+  }
+
+  .header__hero-text_btn {
+    width: 200px;
+    top: -1px;
+  }
+
+  .favorite-coffee .favorite-coffee__wrapper .favorite-coffee__heading {
+    font-size: 32px;
+    position: relative;
+    top: 1px;
+  }
+
+  .favorite-coffee .favorite-coffee__wrapper .favorite-coffee__heading p span {
+    left: -2px;
+  }
+
+  .favorite-coffee__slider-btn_left,
+.favorite-coffee__slider-btn_right {
+    display: none;
+  }
+
+  .favorite-coffee__slider-wrapper {
+    width: 100%;
+  }
+  .favorite-coffee__slider-wrapper .favorite-coffee__slide1 {
+    width: 100%;
+  }
+  .favorite-coffee__slider-wrapper .favorite-coffee__slide1 .favorite-coffee__slide1-img {
+    height: 348px;
+    background-size: cover;
+  }
+
+  .favorite-coffee__slider .favorite-coffee__slide-dots {
+    margin: 0 auto;
+  }
+
+  .about__heading {
+    font-size: 32px;
+    position: relative;
+    top: 1px;
+  }
+
+  .about__heading span {
+    left: -2px;
+  }
+
+  .mobile-app__wrapper {
+    gap: 40px;
+  }
+
+  .mobile-app__offer-heading {
+    font-size: 32px;
+    position: relative;
+    top: 1px;
+  }
+
+  .mobile-app__offer-heading span {
+    left: -2px;
+  }
+
+  .mobile-app__wrapper-links {
+    flex-direction: column;
+  }
+
+  .mobile-app__img {
+    height: 348px;
+    left: 0;
+    top: -4px;
+  }
+
+  .footer {
+    height: 526px;
+    top: -4px;
+  }
+  .footer .footer__wrapper {
+    padding: 60px 16px;
+    gap: 40px;
+  }
+  .footer .footer__wrapper .footer__offer {
+    width: 100%;
+  }
+  .footer .footer__wrapper .footer__offer .footer__offer-heading {
+    font-size: 32px;
+    top: 2px;
+    left: 1px;
+  }
+  .footer .footer__wrapper .footer__offer .footer__offer-heading span {
+    top: -1px;
+    left: -3px;
+  }
+  .footer .footer__wrapper .footer__offer-social-link {
+    position: relative;
+    top: -1px;
+    left: -1px;
+  }
+  .footer .footer__wrapper .footer__offer-social-link:nth-child(2) {
+    top: -1px;
+    left: -3px;
+  }
+  .footer .footer__wrapper .footer__offer-social-link:nth-child(3) {
+    top: -1px;
+    left: -5px;
+  }
+  .footer .footer__wrapper .footer__contacts-info {
+    width: 100%;
+    top: 0;
+    left: 1px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

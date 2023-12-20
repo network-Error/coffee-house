@@ -11,6 +11,7 @@ body {
   margin-bottom: 100px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .nav {
@@ -251,8 +252,9 @@ body {
 
   &__slider-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 1152px;
   }
 
@@ -297,6 +299,109 @@ body {
     }
   }
 
+  &__slide2 {
+    width: 480px;
+    // display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+    .favorite-coffee__slide2-img {
+      background-image: url('../assets/favorite-coffee/coffee-slider-2.png');
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 480px;
+    }
+
+    .favorite-coffee__slide-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .favorite-coffee__slide2-heading {
+      font-size: $fs-24;
+      line-height: $lh-125;
+      position: relative;
+      top: 1px;
+    }
+
+    .favorite-coffee__slide2-text {
+      font-weight: $fw-400;
+      line-height: $lh-150;
+    }
+
+    .favorite-coffee__slide2-price {
+      font-size: $fs-24;
+      line-height: $lh-125;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  &__slide3 {
+    width: 480px;
+    // display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+    .favorite-coffee__slide3-img {
+      background-image: url('../assets/favorite-coffee/coffee-slider-3.png');
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 480px;
+    }
+
+    .favorite-coffee__slide-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .favorite-coffee__slide3-heading {
+      font-size: $fs-24;
+      line-height: $lh-125;
+      position: relative;
+      top: 1px;
+    }
+
+    .favorite-coffee__slide3-text {
+      font-weight: $fw-400;
+      line-height: $lh-150;
+    }
+
+    .favorite-coffee__slide3-price {
+      font-size: $fs-24;
+      line-height: $lh-125;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  ._hide-slide {
+    display: none;
+  }
+
+  ._show-slide {
+    display: flex;
+    animation: animationSlide .5s;
+    -webkit-animation: animationSlide .5s;
+  }
+
+  @keyframes animationSlide {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   &__slide-dots {
     width: 144px;
     height: 4px;
@@ -308,15 +413,26 @@ body {
       height: 4px;
       position: absolute;
     }
-    span:nth-child(1) {
-      background-color: $color-border-dark;
-    }
+    
     span:nth-child(2) {
       left: 52px;
     }
     span:nth-child(3) {
       left: 104px;
     }
+  }
+
+  ._active-dots {
+    background-color: $color-border-dark !important;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+  }
+
+  ._base-dots {
+    background-color: $color-border-light;
   }
 }
 
@@ -1049,6 +1165,10 @@ body {
     display: none;
   }
 
+  .nav__burger-wrapper-list {
+    right: -1000%;
+  }
+
   .header__hero {
     width: 91%;
     height: 644px;
@@ -1201,15 +1321,6 @@ body {
     }
   }
 
-  // ._active-burger-btn-span {
-  //   top: 0;
-  //   transform: rotate(-90deg);
-  //   -webkit-transform: rotate(-90deg);
-  //   -moz-transform: rotate(-90deg);
-  //   -ms-transform: rotate(-90deg);
-  //   -o-transform: rotate(-90deg);
-  // }
-
   ._show {
     right: 0;
   }
@@ -1222,6 +1333,12 @@ body {
 @media (max-width: 767.98px) {
   body {
     padding: 0 16px;
+  }
+
+  .nav__burger-wrapper-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .header__hero {
@@ -1275,6 +1392,24 @@ body {
       width: 100%;
 
       .favorite-coffee__slide1-img {
+        height: 348px;
+        background-size: cover;
+      }
+    }
+
+    .favorite-coffee__slide2 {
+      width: 100%;
+
+      .favorite-coffee__slide2-img {
+        height: 348px;
+        background-size: cover;
+      }
+    }
+
+    .favorite-coffee__slide3 {
+      width: 100%;
+
+      .favorite-coffee__slide3-img {
         height: 348px;
         background-size: cover;
       }

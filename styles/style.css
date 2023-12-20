@@ -52,6 +52,7 @@ body {
   margin-bottom: 100px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .nav {
@@ -262,8 +263,9 @@ body {
 }
 .favorite-coffee__slider-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   width: 1152px;
 }
 .favorite-coffee__slide1 {
@@ -301,6 +303,92 @@ body {
   position: relative;
   top: 1px;
 }
+.favorite-coffee__slide2 {
+  width: 480px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.favorite-coffee__slide2 .favorite-coffee__slide2-img {
+  background-image: url("../assets/favorite-coffee/coffee-slider-2.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 480px;
+}
+.favorite-coffee__slide2 .favorite-coffee__slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.favorite-coffee__slide2 .favorite-coffee__slide2-heading {
+  font-size: 24px;
+  line-height: 125%;
+  position: relative;
+  top: 1px;
+}
+.favorite-coffee__slide2 .favorite-coffee__slide2-text {
+  font-weight: 400;
+  line-height: 150%;
+}
+.favorite-coffee__slide2 .favorite-coffee__slide2-price {
+  font-size: 24px;
+  line-height: 125%;
+  position: relative;
+  top: 1px;
+}
+.favorite-coffee__slide3 {
+  width: 480px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.favorite-coffee__slide3 .favorite-coffee__slide3-img {
+  background-image: url("../assets/favorite-coffee/coffee-slider-3.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 480px;
+}
+.favorite-coffee__slide3 .favorite-coffee__slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.favorite-coffee__slide3 .favorite-coffee__slide3-heading {
+  font-size: 24px;
+  line-height: 125%;
+  position: relative;
+  top: 1px;
+}
+.favorite-coffee__slide3 .favorite-coffee__slide3-text {
+  font-weight: 400;
+  line-height: 150%;
+}
+.favorite-coffee__slide3 .favorite-coffee__slide3-price {
+  font-size: 24px;
+  line-height: 125%;
+  position: relative;
+  top: 1px;
+}
+.favorite-coffee ._hide-slide {
+  display: none;
+}
+.favorite-coffee ._show-slide {
+  display: flex;
+  animation: animationSlide 0.5s;
+  -webkit-animation: animationSlide 0.5s;
+}
+@keyframes animationSlide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .favorite-coffee__slide-dots {
   width: 144px;
   height: 4px;
@@ -313,14 +401,22 @@ body {
   height: 4px;
   position: absolute;
 }
-.favorite-coffee__slide-dots span:nth-child(1) {
-  background-color: #665F55;
-}
 .favorite-coffee__slide-dots span:nth-child(2) {
   left: 52px;
 }
 .favorite-coffee__slide-dots span:nth-child(3) {
   left: 104px;
+}
+.favorite-coffee ._active-dots {
+  background-color: #665F55 !important;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+.favorite-coffee ._base-dots {
+  background-color: #C1B6AD;
 }
 
 .about {
@@ -934,6 +1030,10 @@ body {
     display: none;
   }
 
+  .nav__burger-wrapper-list {
+    right: -1000%;
+  }
+
   .header__hero {
     width: 91%;
     height: 644px;
@@ -1098,6 +1198,12 @@ body {
     padding: 0 16px;
   }
 
+  .nav__burger-wrapper-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .header__hero {
     width: 91%;
     height: 432px;
@@ -1149,6 +1255,20 @@ body {
     width: 100%;
   }
   .favorite-coffee__slider-wrapper .favorite-coffee__slide1 .favorite-coffee__slide1-img {
+    height: 348px;
+    background-size: cover;
+  }
+  .favorite-coffee__slider-wrapper .favorite-coffee__slide2 {
+    width: 100%;
+  }
+  .favorite-coffee__slider-wrapper .favorite-coffee__slide2 .favorite-coffee__slide2-img {
+    height: 348px;
+    background-size: cover;
+  }
+  .favorite-coffee__slider-wrapper .favorite-coffee__slide3 {
+    width: 100%;
+  }
+  .favorite-coffee__slider-wrapper .favorite-coffee__slide3 .favorite-coffee__slide3-img {
     height: 348px;
     background-size: cover;
   }

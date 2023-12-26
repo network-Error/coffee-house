@@ -55,8 +55,8 @@
           <p>Behind each of our cups hides an <span>amazing surprise</span></p>
         </h2>
         <div class="menu__wrapper-btn">
-          <button class="menu__btn-drink active-drink-btn">
-            <div class="menu__btn-icon active-drink-light">
+          <button class="menu__btn-drink menu__btn-drink_coffee">
+            <div class="menu__btn-icon">
               <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path d="M0.5 16.12H16.5V0.12H0.5V16.12Z" fill="url(#pattern0)"/>
                 <defs>
@@ -67,9 +67,9 @@
                 </defs>
               </svg>                
             </div>
-            <p class="munu__btn-text active-drink-light-text">Coffee</p>
+            <p class="munu__btn-text">Coffee</p>
           </button>
-          <button class="menu__btn-drink">
+          <button class="menu__btn-drink menu__btn-drink_tea">
             <div class="menu__btn-icon">
               <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path d="M0.5 16.12H16.5V0.12H0.5V16.12Z" fill="url(#pattern0)"/>
@@ -83,7 +83,7 @@
             </div>             
             <p class="munu__btn-text">Tea</p>
           </button>
-          <button class="menu__btn-drink">
+          <button class="menu__btn-drink menu__btn-drink_desert">
             <div class="menu__btn-icon">
               <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path d="M0.5 16.12H16.5V0.12H0.5V16.12Z" fill="url(#pattern0)"/>
@@ -105,7 +105,7 @@
   <main class="main">
     <section class="menu-items">
       <div class="container">
-        <div class="menu-items__wrapper">
+        <div class="menu-items__wrapper menu-items__wrapper_coffee">
           <div class="menu-items__item">
             <div class="menu-items__item-img menu-items__item-img_img1"></div>
             <div class="menu-items__item-description">
@@ -182,6 +182,130 @@
               <div class="menu-items__item-description-text">
                 <h3 class="menu-items__item-description-heading">Coffee with cognac</h3>
                 <p class="menu-items__item-description-sub-text">Fragrant black coffee with cognac and whipped cream</p>
+              </div>
+              <p class="menu-items__item-price">$6.50</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-items__wrapper menu-items__wrapper_tea">
+          <div class="menu-items__item">
+            <div class="menu-items__item-img menu-items__item-img_img1-tea"></div>
+            <div class="menu-items__item-description">
+              <div class="menu-items__item-description-text">
+                <h3 class="menu-items__item-description-heading">Moroccan</h3>
+                <p class="menu-items__item-description-sub-text">Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint</p>
+              </div>
+              <p class="menu-items__item-price">$4.50</p>
+            </div>
+          </div>
+          <div class="menu-items__item">
+            <div class="menu-items__item-img menu-items__item-img_img2-tea"></div>
+            <div class="menu-items__item-description">
+              <div class="menu-items__item-description-text">
+                <h3 class="menu-items__item-description-heading">Ginger</h3>
+                <p class="menu-items__item-description-sub-text">Original black tea with fresh ginger, lemon and honey</p>
+              </div>
+              <p class="menu-items__item-price">$5.00</p>
+            </div>
+          </div>
+          <div class="menu-items__item">
+            <div class="menu-items__item-img menu-items__item-img_img3-tea"></div>
+            <div class="menu-items__item-description">
+              <div class="menu-items__item-description-text">
+                <h3 class="menu-items__item-description-heading">Cranberry</h3>
+                <p class="menu-items__item-description-sub-text">Invigorating black tea with cranberry and honey</p>
+              </div>
+              <p class="menu-items__item-price">$5.00</p>
+            </div>
+          </div>
+          <div class="menu-items__item">
+            <div class="menu-items__item-img menu-items__item-img_img4-tea"></div>
+            <div class="menu-items__item-description">
+              <div class="menu-items__item-description-text">
+                <h3 class="menu-items__item-description-heading">Sea buckthorn</h3>
+                <p class="menu-items__item-description-sub-text">Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon</p>
+              </div>
+              <p class="menu-items__item-price">$5.50</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-items__wrapper menu-items__wrapper_desert">
+          <div class="menu-items__item">
+            <div class="menu-items__item-img menu-items__item-img_img1-desert"></div>
+            <div class="menu-items__item-description">
+              <div class="menu-items__item-description-text">
+                <h3 class="menu-items__item-description-heading">Marble cheesecake</h3>
+                <p class="menu-items__item-description-sub-text">Philadelphia cheese with lemon zest on a light sponge cake and red currant jam</p>
+              </div>
+              <p class="menu-items__item-price">$3.50</p>
+            </div>
+          </div>
+          <div class="menu-items__item">
+            <div class="menu-items__item-img menu-items__item-img_img2-desert"></div>
+            <div class="menu-items__item-description">
+              <div class="menu-items__item-description-text">
+                <h3 class="menu-items__item-description-heading">Red velvet</h3>
+                <p class="menu-items__item-description-sub-text">Layer cake with cream cheese frosting</p>
+              </div>
+              <p class="menu-items__item-price">$4.00</p>
+            </div>
+          </div>
+          <div class="menu-items__item">
+            <div class="menu-items__item-img menu-items__item-img_img3-desert"></div>
+            <div class="menu-items__item-description">
+              <div class="menu-items__item-description-text">
+                <h3 class="menu-items__item-description-heading">Cheesecakes</h3>
+                <p class="menu-items__item-description-sub-text">Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled with powdered sugar</p>
+              </div>
+              <p class="menu-items__item-price">$4.50</p>
+            </div>
+          </div>
+          <div class="menu-items__item">
+            <div class="menu-items__item-img menu-items__item-img_img4-desert"></div>
+            <div class="menu-items__item-description">
+              <div class="menu-items__item-description-text">
+                <h3 class="menu-items__item-description-heading">Creme brulee</h3>
+                <p class="menu-items__item-description-sub-text">Delicate creamy dessert in a caramel basket with wild berries</p>
+              </div>
+              <p class="menu-items__item-price">$4.00</p>
+            </div>
+          </div>
+          <div class="menu-items__item">
+            <div class="menu-items__item-img menu-items__item-img_img5-desert"></div>
+            <div class="menu-items__item-description">
+              <div class="menu-items__item-description-text">
+                <h3 class="menu-items__item-description-heading">Pancakes</h3>
+                <p class="menu-items__item-description-sub-text">Tender pancakes with strawberry jam and fresh strawberries</p>
+              </div>
+              <p class="menu-items__item-price">$4.50</p>
+            </div>
+          </div>
+          <div class="menu-items__item">
+            <div class="menu-items__item-img menu-items__item-img_img6-desert"></div>
+            <div class="menu-items__item-description">
+              <div class="menu-items__item-description-text">
+                <h3 class="menu-items__item-description-heading">Honey cake</h3>
+                <p class="menu-items__item-description-sub-text">Classic honey cake with delicate custard</p>
+              </div>
+              <p class="menu-items__item-price">$4.50</p>
+            </div>
+          </div>
+          <div class="menu-items__item">
+            <div class="menu-items__item-img menu-items__item-img_img7-desert"></div>
+            <div class="menu-items__item-description">
+              <div class="menu-items__item-description-text">
+                <h3 class="menu-items__item-description-heading">Chocolate cake</h3>
+                <p class="menu-items__item-description-sub-text">Cake with hot chocolate filling and nuts with dried apricots</p>
+              </div>
+              <p class="menu-items__item-price">$5.50</p>
+            </div>
+          </div>
+          <div class="menu-items__item">
+            <div class="menu-items__item-img menu-items__item-img_img8-desert"></div>
+            <div class="menu-items__item-description">
+              <div class="menu-items__item-description-text">
+                <h3 class="menu-items__item-description-heading">Black forest</h3>
+                <p class="menu-items__item-description-sub-text">A combination of thin sponge cake with cherry jam and light chocolate mousse</p>
               </div>
               <p class="menu-items__item-price">$6.50</p>
             </div>
@@ -265,5 +389,6 @@
       </div>
     </div>
   </footer>
+  <script src="./menu.js"></script>
 </body>
 </html>

@@ -175,6 +175,25 @@ body {
     position: relative;
     top: 1px;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+
+    svg {
+      display: none;
+    }
+
+    &:hover {
+
+      svg {
+        display: block;
+      }
+    }
   }
 }
 
@@ -832,6 +851,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  color: $color-dark;
   padding: 8px 16px 8px 8px;
   border: 1px solid $color-border-light;
   border-radius: 100px;
@@ -880,6 +900,7 @@ body {
 
 .active-drink-btn {
   background-color: $color-border-dark;
+  // btn
 }
 
 .active-drink-light {
@@ -954,6 +975,14 @@ body {
     }
   }
 
+  ._hide-wrapper {
+    display: none;
+  }
+
+  ._show-wrapper {
+    display: grid;
+  }
+
   &__refresh-wrapper {
     display: flex;
     align-items: center;
@@ -1018,6 +1047,64 @@ body {
 
     &_img8 {
       background-image: url('../assets/menu-coffee/coffee-8.png');
+      top: -3px;
+      left: -1px;
+    }
+
+
+    &_img1-tea {
+      background-image: url('../assets/menu-tea/tea-1.png');
+    }
+
+    &_img2-tea {
+      background-image: url('../assets/menu-tea/tea-2.png');
+    }
+
+    &_img3-tea {
+      background-image: url('../assets/menu-tea/tea-3.png');
+    }
+
+    &_img4-tea {
+      background-image: url('../assets/menu-tea/tea-4.png');
+    }
+
+
+    &_img1-desert {
+      background-image: url('../assets/menu-desert/dessert-1.png');
+    }
+
+    &_img2-desert {
+      background-image: url('../assets/menu-desert/dessert-2.png');
+    }
+
+    &_img3-desert {
+      background-image: url('../assets/menu-desert/dessert-3.png');
+    }
+
+    &_img4-desert {
+      background-image: url('../assets/menu-desert/dessert-4.png');
+    }
+
+    &_img5-desert {
+      background-image: url('../assets/menu-desert/dessert-5.png');
+      top: -3px;
+      left: -1px;
+    }
+
+    &_img6-desert {
+      background-image: url('../assets/menu-desert/dessert-6.png');
+      top: -3px;
+      left: -1px;
+    }
+
+    &_img7-desert {
+      background-image: url('../assets/menu-desert/dessert-7.png');
+      top: -3px;
+      left: -1px;
+    }
+
+    &_img8-desert {
+      background-image: url('../assets/menu-desert/dessert-8.png');
       top: -3px;
       left: -1px;
     }

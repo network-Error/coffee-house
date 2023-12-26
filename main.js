@@ -1,3 +1,11 @@
+"use strict"
+
+// Link to menu
+const btnMenu = document.querySelector('.header__hero-text_btn');
+btnMenu.addEventListener('click', () => {
+  document.location = 'menu.html';
+})
+
 // Burger menu
 const bodyBlock = document.querySelector('body');
 const burgerBtn = document.querySelector('.nav__burger-btn');

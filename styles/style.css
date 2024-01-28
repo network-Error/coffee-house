@@ -1037,6 +1037,251 @@ body {
   top: 8px;
 }
 
+.modal-window {
+  width: 800px;
+  height: 504px;
+  background-color: #E1D4C9;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 4;
+}
+.modal-window__wrapper {
+  padding: 16px;
+  display: flex;
+}
+.modal-window__img {
+  width: 340px;
+  height: 340px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.modal-window__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal-window__text, .modal-window__size, .modal-window__additives, .modal-window__total, .modal-window__description, .modal-window__close-btn {
+  display: flex;
+  flex-direction: column;
+}
+.modal-window__text {
+  gap: 12px;
+}
+.modal-window__size, .modal-window__additives, .modal-window__description, .modal-window__size-wrapper, .modal-window__additives-wrapper {
+  gap: 8px;
+}
+.modal-window__total {
+  gap: 20px;
+}
+.modal-window__size-wrapper, .modal-window__additives-wrapper {
+  display: flex;
+}
+.modal-window__total, .modal-window__description {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.modal-window__close-btn {
+  align-items: center;
+  background-color: initial;
+  border: 1px solid #665F55;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  padding: 10px 0;
+}
+.modal-window__size-btn, .modal-window__additives-btn {
+  padding: 8px;
+}
+.modal-window__size-btn-wrapper, .modal-window__additives-btn-wrapper {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #C1B6AD;
+  border-radius: 100px;
+}
+.modal-window__heading, .modal-window__total-heading {
+  font-size: 24px;
+  line-height: 125%;
+}
+.modal-window__sub-heading, .modal-window__size-text, .modal-window__size-btn-size, .modal-window__additives-text, .modal-window__additives-btn-option {
+  line-height: 150%;
+}
+.modal-window__description-text {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.modal-coffee1 {
+  background-image: url("../assets/menu-coffee/coffee-1.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee2 {
+  background-image: url("../assets/menu-coffee/coffee-2.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee3 {
+  background-image: url("../assets/menu-coffee/coffee-3.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee4 {
+  background-image: url("../assets/menu-coffee/coffee-4.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee5 {
+  background-image: url("../assets/menu-coffee/coffee-5.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee6 {
+  background-image: url("../assets/menu-coffee/coffee-6.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee7 {
+  background-image: url("../assets/menu-coffee/coffee-7.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee8 {
+  background-image: url("../assets/menu-coffee/coffee-8.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-tea1 {
+  background-image: url("../assets/menu-tea/tea-1.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-tea2 {
+  background-image: url("../assets/menu-tea/tea-2.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-tea3 {
+  background-image: url("../assets/menu-tea/tea-3.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-tea4 {
+  background-image: url("../assets/menu-tea/tea-4.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert1 {
+  background-image: url("../assets/menu-desert/dessert-1.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert2 {
+  background-image: url("../assets/menu-desert/dessert-2.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert3 {
+  background-image: url("../assets/menu-desert/dessert-3.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert4 {
+  background-image: url("../assets/menu-desert/dessert-4.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert5 {
+  background-image: url("../assets/menu-desert/dessert-5.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert6 {
+  background-image: url("../assets/menu-desert/dessert-6.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert7 {
+  background-image: url("../assets/menu-desert/dessert-7.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert8 {
+  background-image: url("../assets/menu-desert/dessert-8.png");
+  background-size: 340px;
+  width: 100%;
+}
+
+.blur-modal {
+  display: block;
+  width: 100%;
+  height: 10000px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.show-modal-window {
+  display: block;
+}
+
+.hide-modal-window {
+  display: none;
+}
+
+.active-btn-drink {
+  background-color: #E1D4C9;
+}
+
+.active-btn-drink-text {
+  color: #E1D4C9;
+}
+
+.active-btn-drink-wrapper {
+  background-color: #665F55;
+}
+
 @media (max-width: 1399.98px) {
   .container {
     width: 1200px;

@@ -1189,6 +1189,290 @@ body {
   }
 }
 
+
+// >>> MODAL <<<
+
+.modal-window {
+  width: 800px;
+  height: 504px;
+  background-color: $color-body;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 4;
+
+  &__wrapper{
+    padding: 16px;
+    display: flex;
+  }
+
+  &__img {
+    width: 340px;
+    height: 340px;
+    //background-color: red;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__text,
+  &__size,
+  &__additives,
+  &__total,
+  &__description,
+  &__close-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    gap: 12px;
+  }
+
+  &__size,
+  &__additives,
+  &__description,
+  &__size-wrapper,
+  &__additives-wrapper {
+    gap: 8px;
+  }
+
+  &__total{
+    gap: 20px;
+  }
+
+  &__size-wrapper,
+  &__additives-wrapper {
+    display: flex;
+  }
+
+  &__total,
+  &__description {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__close-btn {
+    align-items: center;
+    background-color: initial;
+    border: 1px solid $color-border-dark;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    padding: 10px 0;
+  }
+
+  &__size-btn,
+  &__additives-btn {
+    padding: 8px;
+  }
+
+  &__size-btn-wrapper,
+  &__additives-btn-wrapper {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-border-light;
+    border-radius: 100px;
+  }
+
+
+  &__heading,
+  &__total-heading {
+    font-size: $fs-24;
+    line-height: $lh-125;
+  }
+
+  &__sub-heading,
+  &__size-text,
+  &__size-btn-size,
+  &__additives-text,
+  &__additives-btn-option {
+    line-height: $lh-150;
+  }
+
+  &__description-text {
+    font-size: $fs-10;
+    line-height: 14px;
+  }
+}
+
+.modal-coffee1 {
+  background-image: url('../assets/menu-coffee/coffee-1.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee2 {
+  background-image: url('../assets/menu-coffee/coffee-2.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee3 {
+  background-image: url('../assets/menu-coffee/coffee-3.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee4 {
+  background-image: url('../assets/menu-coffee/coffee-4.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee5 {
+  background-image: url('../assets/menu-coffee/coffee-5.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee6 {
+  background-image: url('../assets/menu-coffee/coffee-6.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee7 {
+  background-image: url('../assets/menu-coffee/coffee-7.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-coffee8 {
+  background-image: url('../assets/menu-coffee/coffee-8.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-tea1 {
+  background-image: url('../assets/menu-tea/tea-1.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-tea2 {
+  background-image: url('../assets/menu-tea/tea-2.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-tea3 {
+  background-image: url('../assets/menu-tea/tea-3.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-tea4 {
+  background-image: url('../assets/menu-tea/tea-4.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert1 {
+  background-image: url('../assets/menu-desert/dessert-1.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert2 {
+  background-image: url('../assets/menu-desert/dessert-2.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert3 {
+  background-image: url('../assets/menu-desert/dessert-3.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert4 {
+  background-image: url('../assets/menu-desert/dessert-4.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert5 {
+  background-image: url('../assets/menu-desert/dessert-5.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert6 {
+  background-image: url('../assets/menu-desert/dessert-6.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert7 {
+  background-image: url('../assets/menu-desert/dessert-7.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.modal-desert8 {
+  background-image: url('../assets/menu-desert/dessert-8.png');
+  background-size: 340px;
+  width: 100%;
+}
+
+.blur-modal {
+  display: block;
+  width: 100%;
+  height: 10000px;
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+
+.show-modal-window {
+  display: block;
+}
+
+.hide-modal-window {
+  display: none;
+}
+
+.active-btn-drink {
+  background-color: $color-body;
+}
+
+.active-btn-drink-text {
+  color: $color-body;
+}
+
+.active-btn-drink-wrapper {
+  background-color: $color-container;
+}
+
 // >>> ADAPTIVE <<<
 
 @media (max-width: 1399.98px) {
